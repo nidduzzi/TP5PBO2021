@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Apr 2021 pada 13.59
--- Versi server: 10.1.19-MariaDB
--- Versi PHP: 7.4.14
+-- Generation Time: May 03, 2021 at 03:19 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,43 +24,44 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `highscore`
+-- Table structure for table `highscore`
 --
 
 CREATE TABLE `highscore` (
   `id` int(11) NOT NULL,
   `Username` varchar(200) NOT NULL,
-  `Score` int(11) NOT NULL
+  `Score` int(11) NOT NULL,
+  `Waktu` int(11) NOT NULL,
+  `Score_Akhir` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `highscore`
+-- Dumping data for table `highscore`
 --
 
-INSERT INTO `highscore` (`id`, `Username`, `Score`) VALUES
-(1, 'MasProxy', 350),
-(2, 'Vii', 370),
-(3, 'YourMajesty', 320);
+INSERT INTO `highscore` (`id`, `Username`, `Score`, `Waktu`, `Score_Akhir`) VALUES
+(27, 'Ijud', 212, 74, 286),
+(28, 'Alex', 17, 19, 36);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `highscore`
+-- Indexes for table `highscore`
 --
 ALTER TABLE `highscore`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `highscore`
+-- AUTO_INCREMENT for table `highscore`
 --
 ALTER TABLE `highscore`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
